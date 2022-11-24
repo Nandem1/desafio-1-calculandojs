@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e47cce1f71.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-item">
+            <div class="container-img">
+                <img class="imghead" src="assets/img/gamer-removebg-preview.png" alt="">
+            </div>
+            <div class="container-card-body">
+                <p>Laptop Gamer AMD</p>
+                <input id="cantidadValue" type="text" placeholder="Cantidad a llevar: ">
+                <input id="colorValue" type="text" placeholder="Color: ">
+                <p class="p-footer">Precio: $<span class="precioInicial">400000</span></p>
+                <button onclick="
+                    let precioInicial = 400000;
+                    let precioFinal = document.querySelector('.precioFinal');
+                    let cantidadFinal = document.querySelector('.cantidadFinal');
+                    let colorFinal = document.querySelector('.colorFinal');
+                    let cantidadValue = document.querySelector('#cantidadValue');
+                    let colorValue = document.querySelector('#colorValue');
+
+                    precioFinalCalculo = precioInicial * cantidadValue.value;
+                    precioFinal.innerHTML = new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(precioFinalCalculo);
+
+                    cantidadFinal.innerHTML = cantidadValue.value;
+
+                    colorFinal.style.color = colorValue.value;
+                     
+                ">Calcular Total</button>
+            </div>
+        </div>
+        <div class="container-item-details">
+            <p>Total: <span class="precioFinal"></span></p>
+            <p>Cantidad: <span class="cantidadFinal"></span></p>
+            <p>Color: <i class="fa-solid fa-circle colorFinal"></i></p>
+        </div>
+    </div>
+</body>
+
+</html>

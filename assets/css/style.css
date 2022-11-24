@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.container-item {
+    height: 30rem;
+    width: 20rem;
+    background-color: #729e2e;
+    border: 2px solid rgba(0, 0, 0, 0.075);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.353);
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.container-item-details {
+    margin: 5px;
+}
+
+.imghead {
+    width: 100%;
+    height: 100%;
+}
+
+.container-card-body {
+    text-align: center;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.container-card-body p {
+    margin-bottom: 10px;
+}
+
+.container-card-body input {
+    border-radius: 5px;
+    border: none;
+    height: 3.5vh;
+    width: 70%;
+    margin: 5px;
+}
+
+.p-footer {
+    font-weight: 400;
+    text-align: left;
+    margin-left: 15%;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    margin-top: 6%;
+    background-color: orange;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.353);
+    transition: 0.3s;
+    background-color: orangered;
+}
+
+input {
+    text-indent: 4px;
+    transition: 0.3s;
+}
+
+input:hover {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.353);
+    transition: 0.3s;
+}
